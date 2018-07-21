@@ -1,25 +1,28 @@
-const ADD_COMMENT = 'ADD_COMMENT';
-const REMOVE_COMMENT = 'REMOVE_COMMENT';
-const EDIT_COMMENT = 'EDIT_COMMENT';
-const THUMB_UP_COMMENT = 'THUMB_UP_COMMENT';
-const THUMB_DOWN_COMMENT = 'THUMB_DOWN_COMMENT';
+export const ADD_COMMENT = 'ADD_COMMENT';
+export const REMOVE_COMMENT = 'REMOVE_COMMENT';
+export const EDIT_COMMENT = 'EDIT_COMMENT';
+export const THUMB_UP_COMMENT = 'THUMB_UP_COMMENT';
+export const THUMB_DOWN_COMMENT = 'THUMB_DOWN_COMMENT';
 
 {
   type: ADD_COMMENT,
   text: 'My first comment !',
-  id: 1
+  id: 1,
+  tumbs: 0
 }
 
 {
   type: REMOVE_COMMENT,
   text: 'Remove my first comment !',
-  id: 2
+  id: 2,
+  tumbs: 0
 }
 
 {
   type: EDIT_COMMENT,
   text: 'Edit comment !',
-  id: 2
+  id: 2,
+  tumbs: 0
 }
 
 {
