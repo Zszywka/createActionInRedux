@@ -8,21 +8,21 @@ export const THUMB_DOWN_COMMENT = 'THUMB_DOWN_COMMENT';
   type: ADD_COMMENT,
   text: 'My first comment !',
   id: 1,
-  tumbs: 0
+  thumbs: 0
 }
 
 {
   type: REMOVE_COMMENT,
   text: 'Remove my first comment !',
   id: 2,
-  tumbs: 0
+  thumbs: 0
 }
 
 {
   type: EDIT_COMMENT,
   text: 'Edit comment !',
   id: 2,
-  tumbs: 0
+  thumbs: 0
 }
 
 {

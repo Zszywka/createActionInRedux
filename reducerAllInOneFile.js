@@ -7,7 +7,7 @@ const initialState = {
     users: []
 };
 
-//reductor
+// reductor
 // function reducer(state, action) {
 //   //when we use app first time
 //   if (!state) {
@@ -15,6 +15,7 @@ const initialState = {
 //   }
 //     return state;
 // }
+//or:
 
 function reducer(state = initialState, action) {
   //recognize the appropriate type of action
@@ -52,7 +53,7 @@ function reducer(state = initialState, action) {
       return Object.assign({}, state, {
         comments: state.comments.map(comment => {
           if (comment.id === action.id){
-            comment.tumbs += 1
+            comment.thumbs += 1
           }
         })
       });
@@ -61,7 +62,7 @@ function reducer(state = initialState, action) {
       return Object.assign({}, state, {
         comments: state.comments.map(comment => {
           if (comment.id === action.id){
-            comment.tumbs -= 1
+            comment.thumbs -= 1
           }
         })
       });
