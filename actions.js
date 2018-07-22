@@ -24,14 +24,14 @@ function editComment(text, id) {
     id
   }
 }
-function thumbUpComment(id, tumbs) {
+function thumbUpComment(id, thumbs) {
   return {
     type: THUMB_UP_COMMENT,
     id,
     thumbs: thumbs + 1
   }
 }
-function thumbDownComment(id, tumbs) {
+function thumbDownComment(id, thumbs) {
   return {
     type: THUMB_DOWN_COMMENT,
     id,
@@ -50,7 +50,7 @@ const boundRemoveComment = id => dispatch(removeComment(id));
 boundRemoveComment(2);
 const boundEditComment = (text, id) => dispatch(editComment(text, id));
 boundEditComment('edytowany komentarz', 1);
-const boundThumbUpComment = (id, tumbs) => dispatch(thumbUpComment(id, tumbs));
+const boundThumbUpComment = (id, thumbs) => dispatch(thumbUpComment(id, thumbs));
 boundThumbUpComment(1, 1);
-const boundThumbDownComment = (id, tumbs) => dispatch(thumbDownComment(id, tumbs));
+const boundThumbDownComment = (id, thumbs) => dispatch(thumbDownComment(id, thumbs));
 boundThumbDownComment (1, 1);
